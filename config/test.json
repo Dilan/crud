@@ -1,0 +1,10 @@
+{
+    "postgres": {
+        "host": "127.0.0.1",
+        "database": "immersive-test",
+        "user": "postgres",
+        "password": "postgres",
+        "port": "5432",
+        "schema": "vr"
+    }
+}
