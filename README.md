@@ -1,5 +1,4 @@
-# Postgres
-
+# Postgres with Docker
 
     $ docker pull postgres:13
 
@@ -7,9 +6,9 @@
         -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres \
         --name postgres -v ~/postgres/:/var/lib/postgresql/data  -d postgres:13
 
+# Test
 
-    $ postgresql://postgres:postgres@127.0.0.1:5432/immersive
-
+    $ npm test
 
 # REST
 
