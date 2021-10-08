@@ -1,4 +1,5 @@
 -- CREATE DATABASE immersive;
+-- CREATE DATABASE immersive_test;
 
 CREATE SCHEMA vr;
 
