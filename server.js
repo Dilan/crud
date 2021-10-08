@@ -101,7 +101,8 @@ if (require.main === module) {
     const sequelize = new Sequelize(config.postgres.uri);
     sequelize.authenticate()
         .then(() => {
-            console.log('Postgres connection has been established successfully.');
+            console.log('Postgres connection has been established successfully and sync.');
+
         })
         .catch((err) => {
             console.error(err);
