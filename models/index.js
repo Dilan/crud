@@ -1,7 +1,7 @@
 const config = require('../config');
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(config.postgres.uri, { omitNull: true });
+const sequelize = new Sequelize(config.postgres.uri, { logging: false, omitNull: true });
 
 const db = {};
 

@@ -16,6 +16,7 @@ at root@*******:/#
 
 at postgres=#
 
+    $ CREATE DATABASE immersive_test;
     $ CREATE DATABASE immersive;
     $ exit
 
