@@ -13,11 +13,6 @@ router.post('/login', async (req, res) => {
     let email = req.body['email'];
     let user = await db.user.findOne({ where: { email: email } });
 
-    console.log(user)
-    console.log(user.email)
-    console.log(user.md5password)
-    console.log(req.body['password'], md5(req.body['password']))
-
     if (!user || !user['id']) {
         return res.status(401).json({  });
     }

@@ -38,7 +38,15 @@ Test API status page:
 
 Get token by user / password:
 
-    $ curl -X POST http://127.0.0.1:3000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"admin@dilan.app","password":"qwerty"}'
+### Request
+
+`POST /api/auth/login`
+
+    $ curl -i -X POST http://127.0.0.1:3000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"admin@dilan.app","password":"qwerty"}'
+
+### Response
+
+    {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6ImFkbWluQGRpbGFuLmFwcCJ9LCJpYXQiOjE2MzM3MDY2Njg1NjUsImV4cCI6MTYzMzc5MzA2ODU2Nn0.15iPLMNz0Rk693H7sPgLwAPswam3C9RfnAd4Y0akGJs"}%
 
 Get company list:
 
