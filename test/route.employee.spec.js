@@ -23,6 +23,7 @@ describe('API employee routes tests:', function() {
 
         Promise.all([
             db.user.sync({ force: true }),
+            db.company.sync({ force: true }),
             db.employee.sync({ force: true })
         ])
         .then(() => {
